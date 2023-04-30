@@ -2,7 +2,8 @@
   "name": "graphql-constraint-directive",
   "version": "5.0.0",
   "description": "Validate GraphQL fields",
-  "main": "index.js",
+  "type": "module",
+  "exports": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "test": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-full.js",
