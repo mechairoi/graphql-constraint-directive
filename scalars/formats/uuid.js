@@ -1,8 +1,9 @@
-const { GraphQLError } = require('graphql/error')
-const { isUUID } = require('validator')
-
-module.exports = (value) => {
-  if (isUUID(value)) return true
-
-  throw new GraphQLError('Must be in UUID format')
-}
+import error from "graphql/error";
+import validator from "validator";
+const { GraphQLError } = error;
+const { isUUID } = validator;
+export default (value) => {
+    if (isUUID(value))
+        return true;
+    throw new GraphQLError('Must be in UUID format');
+};
