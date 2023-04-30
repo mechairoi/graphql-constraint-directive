@@ -7,8 +7,6 @@
   "scripts": {
     "test": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-full.js",
     "test-schema-wrapper": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-schema-wrapper.js",
-    "test-apollo-plugin": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-apollo-plugin.js",
-    "test-apollo4-plugin": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-apollo4-plugin.js",
     "test-envelop-plugin": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-envelop-plugin.js",
     "test-validation-rule-express-graphql": "standard && nyc --reporter=html --reporter=text --reporter=lcov mocha test/**/testsuite-validation-rule-express-graphql.js"
   },
@@ -34,7 +32,6 @@
   ],
   "devDependencies": {
     "apollo-server-express": "3.12.0",
-    "@apollo/server": "4.5.0",
     "coveralls": "3.1.1",
     "express": "4.18.2",
     "graphql": "16.6.0",
