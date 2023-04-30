@@ -1,6 +1,5 @@
-import error from "graphql/error";
+import { GraphQLError } from "graphql";
 import validator from "validator";
-const { GraphQLError } = error;
 const { isBase64 } = validator;
 export default (value) => {
     if (isBase64(value))

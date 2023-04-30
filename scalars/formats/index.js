@@ -7,7 +7,7 @@ import ipv6 from "./ipv6.js";
 import uri from "./uri.js";
 import uuid from "./uuid.js";
 export { byte };
-export { dateTime as date-time };
+export { dateTime };
 export { date };
 export { email };
 export { ipv4 };
@@ -16,7 +16,7 @@ export { uri };
 export { uuid };
 export default {
     byte,
-    date-time: dateTime,
+    'date-time': dateTime,
     date,
     email,
     ipv4,

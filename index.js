@@ -1,9 +1,8 @@
 import { GraphQLNonNull, GraphQLList, TypeInfo, ValidationContext, visit, visitWithTypeInfo, GraphQLError } from "graphql";
 import QueryValidationVisitor from "./lib/query-validation-visitor.js";
-import utils from "@graphql-tools/utils";
+import { getDirective, mapSchema, MapperKind } from "@graphql-tools/utils";
 import { getConstraintTypeObject, getScalarType } from "./lib/type-utils.js";
 import { constraintDirectiveTypeDefs } from "./lib/type-defs.js";
-const { getDirective, mapSchema, MapperKind } = utils;
 function constraintDirective() {
     const constraintTypes = {};
     function getConstraintType(fieldName, type, notNull, directiveArgumentMap, list, listNotNull) {

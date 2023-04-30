@@ -1,6 +1,5 @@
-import error from "graphql/error";
+import { GraphQLError } from "graphql";
 import validator from "validator";
-const { GraphQLError } = error;
 const { isURL } = validator;
 export default (value) => {
     if (isURL(value))
